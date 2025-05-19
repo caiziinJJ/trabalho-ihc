@@ -1,0 +1,26 @@
+/* Garante que o body ocupa toda a altura da janela */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Main expande para empurrar o footer para baixo */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #928E8E;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 40px; /* Espaço entre os itens */
+    padding: 20px;
+    font-size: 14px; /* tamanho recomendado */
+}
