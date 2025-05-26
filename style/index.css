@@ -10,12 +10,14 @@ html, body {
 
 
 /* Main expande para empurrar o footer para baixo */
-main {
-    flex: 1;
-    padding: 20px;
+#css_main {
+    flex: 1;    /*empurra o footer para baixo*/
+    padding: 20px; 
+    min-height: 100vh; /*Cria um tamanho fixo pro body*/
+    background-color: #f8f5f5;
 }
 
-footer {
+#footer {
     background-color: #928E8E;
     color: #fff;
     display: flex;
@@ -23,4 +25,17 @@ footer {
     gap: 40px; /* Espaço entre os itens */
     padding: 20px;
     font-size: 14px; /* tamanho recomendado */
+}
+
+#main_nav{
+    padding: 15px; /*Cria um espaço interno entre os itens de 15pixels*/
+    display: flex; /*Coloca os itens lado a lado*/
+    justify-content: space-around; /*Cria um espaço de distribuição igual entre os itens do nav-bar*/
+    align-items: center;
+}
+
+#main_nav a{
+    color: black;
+    text-decoration: none;
+
 }
