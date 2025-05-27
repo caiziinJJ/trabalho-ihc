@@ -89,7 +89,7 @@ html, body {
 
 }
 .login a {
-      display: block;
+display: block;
   font-size: 13px;
   color: #397ba9;
   text-decoration: underline;
@@ -99,6 +99,7 @@ html, body {
   align-items: center;
   margin-bottom: 12px;
   font-size: 14px;
+  margin-left: -140px;
   
 }
 .checkbox input{
@@ -107,7 +108,9 @@ html, body {
 }
 .checkbox label{
     justify-content: space-between;
-    
+    text-align: justify;
+    margin-left: -370px;
+    margin-top: -8px;
 }
 .cadastro {
   margin-top: 20px;
@@ -118,19 +121,35 @@ html, body {
   text-align: center;
   
 }
-
+.conta{
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
 .botao {
-    
+
+  margin-left: 10px;
   background-color: #397ba9;
   color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  border-radius: 60px;
   text-decoration: none;
+  text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 14px;
   
 }
+.conta a {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 #footer {
     background-color: #928E8E;
     color: #fff;
