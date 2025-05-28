@@ -27,7 +27,7 @@ body {
     /* Centraliza horizontalmente */
     gap: 40px;
     /* Espaço entre os itens */
-    padding: 20px;
+    margin-top: 61px;
     /* tamanho recomendado */
     font-size: 14px;
     /* Centraliza os itens no eixo y*/
