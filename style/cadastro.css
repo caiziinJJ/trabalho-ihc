@@ -79,3 +79,32 @@ body {
     width: 100%; 
     background-color: #377ba5; 
 }
+
+.nome-campo-cadastro{ /* Esse aqui é para quando queremos alinhar dois títulos de campos */
+    display: flex;    /* Aqui, criamos uma div que engobla os códigos de todas */
+    gap: 20px;        /* os campos que ficarão lado a cado, incluindo os inputs */
+    margin-bottom: 15px;
+}
+
+.campo-cadastro{ /* Aqui personalizamos os campos */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.campo-cadastro label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo-cadastro input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.campo-cadastro input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
