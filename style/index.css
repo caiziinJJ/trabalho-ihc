@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
@@ -154,8 +154,9 @@ html, body {
   }
   
   /* Rodapé */
-  #footer {
+  footer {
     background-color: #928E8E;
+    width: 100%;
     color: #fff;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -163,4 +164,10 @@ html, body {
     font-size: 14px; /* tamanho recomendado */
     margin-top: 229px;
     z-index: 0;
+    position: absolute;
+    bottom: 0px;
+}
+
+.rodape {
+    padding: 10px;
 }
