@@ -1,4 +1,3 @@
-/* Garante que o body ocupa toda a altura da janela */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,33 +8,159 @@ html, body {
 }
 
 
-/* Main expande para empurrar o footer para baixo */
-#css_main {
-    flex: 1;    /*empurra o footer para baixo*/
-    padding: 20px; 
-    min-height: 100vh; /*Cria um tamanho fixo pro body*/
-    background-color: #f8f5f5;
-}
 
-#footer {
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Fundo da navbar */
+  .navbar-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #3176a0;
+    z-index: 0;
+  }
+  
+  /* Conteúdo da navbar */
+  .navbar-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1;
+    color: white;
+  }
+  
+  /* Logo */
+  .logo {
+    height: 60px;
+  }
+  
+  /* Menu de navegação */
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 90px;
+    letter-spacing: 3px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Área direita (idioma e login) */
+  .navbar-direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+  }
+  
+  /* Corpo principal */
+  .principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 60px 40px;
+    gap: 40px;
+
+  }
+  
+  /* Texto principal */
+  .texto-principal {
+    max-width: 50%;
+  }
+  
+  .texto-principal .destaque {
+    color: #3176a0;
+    font-weight: bold;
+  }
+  
+  .texto-principal h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .descricao {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 60px;
+  }
+  
+  /* Botão */
+  .botao-consulta {
+    display: inline-block;
+    background-color: #3176a0;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Imagem médica circular */
+  .imagem-principal {
+    position: relative;
+    max-width: 40%;
+  }
+  
+  .selo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 8px solid #888;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-right: 400px;
+    margin-top: 100px;
+  }
+  
+  .selo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Marcadores (balõezinhos ao lado da imagem) */
+  .marcador {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    position: absolute;
+    left: -190px;
+    white-space: nowrap;
+  }
+  
+  .marcador1 {
+    top: 130px;
+  }
+  
+  .marcador2 {
+    bottom: 65px;
+  }
+  
+  /* Rodapé */
+  #footer {
     background-color: #928E8E;
     color: #fff;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     gap: 40px; /* Espaço entre os itens */
-    padding: 20px;
     font-size: 14px; /* tamanho recomendado */
-}
-
-#main_nav{
-    padding: 15px; /*Cria um espaço interno entre os itens de 15pixels*/
-    display: flex; /*Coloca os itens lado a lado*/
-    justify-content: space-around; /*Cria um espaço de distribuição igual entre os itens do nav-bar*/
-    align-items: center;
-}
-
-#main_nav a{
-    color: black;
-    text-decoration: none;
-
+    margin-top: 229px;
+    z-index: 0;
 }

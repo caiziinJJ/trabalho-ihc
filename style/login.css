@@ -150,11 +150,14 @@ display: block;
 }
 
 
-#footer {
-    background-color: #928E8E;
-    color: #fff;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 40px; /* Espaço entre os itens */
-    font-size: 14px; /* tamanho recomendado */
-}
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  .main-content {
+    padding-bottom: 50px; /* Ajuste para a altura do rodapé */
+  }
