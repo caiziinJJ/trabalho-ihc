@@ -157,4 +157,5 @@ display: block;
     justify-content: center; /* Centraliza horizontalmente */
     gap: 40px; /* Espaço entre os itens */
     font-size: 14px; /* tamanho recomendado */
+    bottom: 0px;
 }

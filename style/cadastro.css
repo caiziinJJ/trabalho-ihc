@@ -67,7 +67,7 @@ body {
     /* Ocupa todo espaço da width, que nesse caso são 646px, nada mais que isso*/
     width: 100%;
     max-height: 626;
-    height: 622px;
+    height: 622px; 
 }
 
 .metade-formulario{
