@@ -150,6 +150,7 @@ display: block;
 }
 
 
+
 footer {
     position: sticky;
     bottom: 0;
@@ -161,3 +162,14 @@ footer {
   .main-content {
     padding-bottom: 50px; /* Ajuste para a altura do rodapé */
   }
+
+#footer {
+    background-color: #928E8E;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 40px; /* Espaço entre os itens */
+    font-size: 14px; /* tamanho recomendado */
+    bottom: 0px;
+}
+
