@@ -85,13 +85,13 @@ body {
     height: auto;
 }
 
-#header{
+#header{ 
     display: flex;
     align-items: center;
-    justify-content: flex;
+    justify-content: flex-start;
     padding: 0 70px; /* espaço lateral opcional */
     height: 125px; 
-    width: 100%; 
+    width: 100vh; 
     background-color: #377ba5; 
 }
 
