@@ -153,3 +153,11 @@ header a{
 .campo-cadastro input::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
+.required-asterisk {
+    color: red;
+  }
+  
+  .required::after {
+    content: "*";
+    color: red;
+  }

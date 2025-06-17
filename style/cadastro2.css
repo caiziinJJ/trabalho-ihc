@@ -8,10 +8,46 @@ body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura e altura total do elemento. */
 }
+.cabecalho{
+    display: flex;
+    background-color: #3176a0;
+    height: 10vh;
+    width: 100%;
+    z-index: 0;
+    justify-content: space-between;
+}
+.logo-navbar{
+    background-color: black;
+}
+.logo-navbar img{
+    width: 90px; 
+    height: 90px;
+}
+#main-nav{
+    align-items: center;
+}
+#main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: white;
+    list-style: none;
+
+}
+#main-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+ /*
 header{
     display: flex;
     background-color: #377ba5;
-    height: 10vh; /*Só usamos vh quando falamos de altura*/
+    height: 10vh; /*Só usamos vh quando falamos de altura
     width: 100%; 
     padding: 0 5px;
     justify-content: space-between;
@@ -40,14 +76,14 @@ header a{
 }
 .nav-link-login{
     margin-left: auto;
-    /*margin-right: 1.5%;*/
+    /*margin-right: 1.5%;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 #main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse 
 }
 
 
@@ -55,6 +91,6 @@ header a{
     margin: .2% 1.5%;
 }
 
-
+*/
 
 
