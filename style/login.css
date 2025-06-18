@@ -128,7 +128,6 @@ display: block;
     margin-top: 10px;
 }
 .botao {
-
   margin-left: 10px;
   background-color: #397ba9;
   color: white;
@@ -148,23 +147,13 @@ display: block;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
-
 footer {
-    position: sticky;
+    background-color: #928E8E;
+    width: 100%;
     bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: #f2f2f2;
     padding: 10px;
-  }
-  .main-content {
-    padding-bottom: 50px; /* Ajuste para a altura do rodapé */
-  }
-
-#footer {
-    background-color: #928E8E;
+    position: absolute;
     color: #fff;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */

@@ -8,6 +8,9 @@ body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura e altura total do elemento. */
 }
+main{
+    flex: 1; 
+}
 .cabecalho{
     display: flex;
     background-color: #3176a0;
@@ -26,21 +29,26 @@ body {
 #main-nav{
     align-items: center;
 }
-#main-nav ul{
+#main-nav a{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
     color: white;
     list-style: none;
-
-}
-#main-nav a{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
+#footer{
+    background-color: #928E8E;
+    width: 100%;
+    justify-content: space-around;   
+    color: #fff;
+    display: flex;
+    font-size: 15px; /* tamanho recomendado */
+    flex-wrap: wrap;
+}
 
 
  /*
