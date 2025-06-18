@@ -11,33 +11,33 @@ body {
 main{
     flex: 1; 
 }
-.cabecalho{
+#cabecalho{
     display: flex;
     background-color: #3176a0;
+    box-sizing: border-box;
     height: 10vh;
     width: 100%;
-    z-index: 0;
+    padding: 50px;
     justify-content: space-between;
+    align-items: center;
 }
 .logo-navbar{
-    background-color: black;
+    margin: 0px;
 }
 .logo-navbar img{
     width: 90px; 
     height: 90px;
+    display: block;
 }
 #main-nav{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex: 1 ;
 }
 #main-nav a{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
     color: white;
-    list-style: none;
     text-decoration: none;
-    color: white;
     font-weight: bold;
 }
 #footer{
@@ -48,6 +48,13 @@ main{
     display: flex;
     font-size: 15px; /* tamanho recomendado */
     flex-wrap: wrap;
+}
+.nav-links-principais{
+
+}
+.nav-login-idioma{
+    gap: 10px;
+    margin-left: auto;
 }
 
 
