@@ -10,21 +10,25 @@
     </title>
 </head>
 <body>
-     <header id="header">
-        <figure style="margin: 0px; ">
-            <img src="../images/Logo.png" alt="" style="width: 90px; height: 90px;">
+     <header id="cabecalho">
+        <figure class="logo-navbar">
+            <img src="../images/Logo.png" alt="" >
         </figure>
-        <nav id="main_nav">
-            <a href="alguma.html">Página inicial</a>
-            <a href="alguma.html">Serviços</a>
-            <a href="alguma.html">Profissionais</a>
-            <a href="alguma.html">Sobre nós</a>
-            <a href="alguma.html">Contato</a>
-            <a href="alguma.html">PT-BR</a>
-            <a href="alguma.html">LOGIN</a>
+        <nav id="main-nav">
+                <div class="nav-links-centrais">
+                <a href="index.html">Página inicial</a>
+                <a href="marcar_consulta.html">Consultas</a>
+                <a href="pagina_indisponivel.html">Profissionais</a>
+                <a href="pagina_indisponivel.html">Sobre nós</a>
+                <a href="pagina_indisponivel.html">Contato</a>
+            </div>
+            <div class="nav-login-idioma">
+                <a class="nav-link-login" href="#" >🇧🇷 PT &#x25BC</a>
+                <a class="nav-link-login" href="login.html" >LOGIN &#x25BC</a>
+            </div>
         </nav>
     </header>
-    <div class="container">
+    <main>
         <div class="esquerda">
             <img src="../images/consulta.png" alt="">
 
@@ -39,19 +43,27 @@
                 <option value="">Nutricionista</option>
                 <option value="">Proctologista</option>
                 <option value="">Urologista</option>
-
-
             </select>
-            <h2>Escolha um horario:</h2>
+            <h2>Agendar um Horário</h2>
+            <label for="">Selecione a hora</label>
+            <select name="" id="">
+                <option value="">Selecionar</option>
+                <option value="">8:30</option>
+                <option value="">9:30</option>
+                <option value="">10:30</option>
+                <option value="">11:30</option>
+                <option value="">12:30</option>
+            </select>
+            <button type="submit">Entrar</button>
         </div>
-    </div>
-     <footer id="footer">
+    </main>
+     <footer id="footerr">
         <p><strong>Endereço:</strong><br> 
             Hospital Lorem Ipsum Avenida das Nações, Quadra 102, Bloco A <br> Asa Norte, Brasília - DF, 70700-000
         </p>
 
         <p><strong>Trabalhe conosco:</strong><br>
-            https://www.empregare.com/pt-br/trabalhe-no-hospital-lorem-ipsum
+            <a href="https://www.empregare.com/pt-br/trabalhe-no-hospital-lorem-ipsum">https://www.empregare.com/pt-br/trabalhe-no-hospital-lorem-ipsum</a>
         </p>
 
         <p><strong>Envie-nos um E-mail:</strong><br>
@@ -62,6 +74,5 @@
             +55 (61) 94002-8922
         </p>
     </footer>
-
 </body>
 </html>

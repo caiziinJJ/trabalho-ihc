@@ -1,5 +1,3 @@
-<!-- Página de Cadastro -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,13 +15,13 @@
         <nav id="main-nav">
                 <div class="nav-links-centrais">
                 <a href="index.html">Página inicial</a>
-                <a href="">Serviços</a>
-                <a href="">Profissionais</a>
-                <a href="alguma.html">Sobre nós</a>
-                <a href="alguma.html">Contato</a>
+                <a href="marcar_consulta.html">Consultas</a>
+                <a href="pagina_indisponivel.html">Profissionais</a>
+                <a href="pagina_indisponivel.html">Sobre nós</a>
+                <a href="pagina_indisponivel.html">Contato</a>
             </div>
             <div class="nav-login-idioma">
-                <a class="nav-link-login" href="login.html" >🇧🇷 PT &#x25BC</a>
+                <a class="nav-link-login" href="#" >🇧🇷 PT &#x25BC</a>
                 <a class="nav-link-login" href="login.html" >LOGIN &#x25BC</a>
             </div>
         </nav>
@@ -34,16 +32,16 @@
             <section id="formulario">
                 <form action="#" method="post">
                     <div class="campo-cadastro">
-                        <label for="name" style="display: block">1. Nome Completo</label>
+                        <label for="name" style="display: block">1. Nome Completo<span class="required-asterisk">*</span></label>
                         <input type="text" id="name" required placeholder="João Silva Nogueira"><br> <!-- A tag br serve para quebrar linha-->
                     </div>
                     <div class="nome-campo-cadastro">
                         <div class="campo-cadastro">
-                            <label for="birthday">2. Data de Nascimento</label>
+                            <label for="birthday">2. Data de Nascimento<span class="required-asterisk">*</span></label>
                             <input type="date" id="birthday" required>
                         </div>
                         <div class="campo-cadastro">
-                            <label for="gender">3. Gênero</label>
+                            <label for="gender">3. Gênero<span class="required-asterisk">*</span></label>
                             <select name="gender" id="gender" required>
                                 <option value="male">Masculino</option>
                                 <option value="female">Feminino</option>
@@ -51,31 +49,33 @@
                             </select>
                         </div>
                         <div class="campo-cadastro">
-                            <label for="telephone">4. Telefone</label>
+                            <label for="telephone">4. Telefone<span class="required-asterisk">*</span></label>
                             <input type="tel" id="telephone" required placeholder="(00)9999-9999"><br>
                         </div>
                     </div>
                     <div class="nome-campo-cadastro">
                         <div class="campo-cadastro">
-                            <label for="cpf">5. CPF</label>
+                            <label for="cpf">5. CPF<span class="required-asterisk">*</span></label>
                             <input type="text" id="cpf" required placeholder="123.456.789.00">
                         </div>
                         <div class="campo-cadastro">
-                            <label for="email">6. E-mail</label>
+                            <label for="email">6. E-mail<span class="required-asterisk">*</span></label>
                             <input type="email" name="email" id="email" required placeholder="seu.nome@email.com"><br>
                         </div>
                     </div>
                     <div class="campo-cadastro">
-                        <label for="momsname">7. Nome Completo da Mãe</label>
+                        <label for="momsname">7. Nome Completo da Mãe<span class="required-asterisk">*</span></label>
                         <input type="text" name="momsname" id="momsname" required placeholder="Maria do Carmos Da Silva"><br>
                     </div>
                     <div class="nome-campo-cadastro">
                         <div class="campo-cadastro">
-                            <label for="password">8. Senha</label>
+                            <label for="password">8. Senha<span class="required-asterisk">*</span></label>
                             <input type="password" id="password" name="password" required placeholder="******************">
+                            <em class="descri-senha">A senha deve conter ao menos uma letra maiúscula, uma letra minúscula,
+                            um número e um símbolo especial. Ex:Aa@123</em>
                         </div>
                         <div class="campo-cadastro">
-                            <label for="confirmpassword">9. Confirmar Senha</label>
+                            <label for="confirmpassword">9. Confirmar Senha<span class="required-asterisk">*</span></label>
                             <input type="password" id="confirmpassword" name="confirmpassword" required placeholder="******************"><br>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
             </figure>
         </div>  
     </main>
-    <footer id="footer">
+    <footer id="footerr">
         <p><strong>Endereço:</strong><br> 
             Hospital Lorem Ipsum Avenida das Nações, Quadra 102, Bloco A <br> Asa Norte, Brasília - DF, 70700-000
         </p>

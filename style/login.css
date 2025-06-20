@@ -6,16 +6,13 @@ html, body {
     flex-direction: column;
     font-family: 'Inter', sans-serif;
 }
-
-
-
-.container{
+main{
+    flex: 1;
     display: flex;
-    
     height: 90vh;
 }
 .esquerda{
-    background-color: #397ba9 ;
+    background-color: #3176a0;
     color: white;
     flex: 1;
     display: flex;
@@ -25,21 +22,17 @@ html, body {
     text-align: center;
     padding: 40px;
 }
-
 .esquerda img{
     max-width:350px;
     margin-bottom: 10px;
     border-radius: 100%;
-    
-
 }
 .esquerda p{
     font-size: 25px;
     margin-top: -15px;
 }
 .esquerda h1{
-    font-size: 40px;
-    
+    font-size: 40px;  
     margin-top: -40px;
 }
 .direita{
@@ -57,13 +50,12 @@ html, body {
 }
 .login{
     background-color: white;
-  border: 2px solid #ccc;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 270px;
-  text-align: center;
-
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
 }
 .login h3{
     font-size: 22px;
@@ -76,23 +68,21 @@ html, body {
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
-
 }
 .login button{
     background-color: #397ba9;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-bottom: 10px;
-
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 .login a {
-display: block;
-  font-size: 13px;
-  color: #397ba9;
-  text-decoration: underline;
+    display: block;
+    font-size: 13px;
+    color: #397ba9;
+    text-decoration: underline;
 }
 .checkbox{
   display: flex;
@@ -100,11 +90,9 @@ display: block;
   margin-bottom: 12px;
   font-size: 14px;
   margin-left: -140px;
-  
 }
 .checkbox input{
     margin-right: 220px;
-
 }
 .checkbox label{
     justify-content: space-between;
@@ -114,12 +102,10 @@ display: block;
 }
 .cadastro {
   margin-top: 20px;
-
   padding: 15px 25px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  text-align: center;
-  
+  text-align: center; 
 }
 .conta{
     display: flex;
@@ -140,25 +126,19 @@ display: block;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  
 }
 .conta a {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-footer {
+#footerr{
     background-color: #928E8E;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    position: absolute;
+    justify-content: space-around;   
     color: #fff;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 40px; /* Espaço entre os itens */
-    font-size: 14px; /* tamanho recomendado */
-    bottom: 0px;
+    font-size: 15px; /* tamanho recomendado */
+    flex-wrap: wrap;
 }
 

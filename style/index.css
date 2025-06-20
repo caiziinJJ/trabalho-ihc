@@ -5,138 +5,144 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-}
-
-
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  .navbar-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100%;
+}
+#cabecalho{
+    display: flex;
     background-color: #3176a0;
-    z-index: 0;
-  }
-  .navbar-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
+    box-sizing: border-box;
+    height: 10vh;
     width: 100%;
-    display: flex;
-    align-items: center;
+    padding: 50px;
     justify-content: space-between;
-    padding: 0 40px;
-    z-index: 1;
-    color: white;
-  }
-  .navbar-direita {
+    align-items: center;
+}
+.logo-navbar{
+    margin: 0px;
+}
+.logo-navbar img{
+    width: 90px; 
+    height: 90px;
+    display: block;
+}
+#main-nav{
     display: flex;
     align-items: center;
-    gap: 25px;
-    font-weight: bold;
-  }
-  .menu {
-    display: flex;
-    list-style: none;
-    gap: 90px;
-    letter-spacing: 3px;
-  }
-  .menu li a {
+    flex: 1 ;
+}
+#main-nav a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
-  }
-  .logo {
-    height: 60px;
-  }
-  .principal {
+    font-weight: 700;
+    padding: 10px 30px;
+}
+.nav-links-centrais{
     display: flex;
-    justify-content: space-between;
-    padding: 140px 60px 40px;
-    gap: 40px;
+    gap: 30px;
+    margin-left: 20vw;
+}
+.nav-login-idioma{
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+}
+.logo-navbar{
+    margin: .2% 1.5%;
+}
+#main-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8%;
+    
+}
+main{
+  flex: 1;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 90px;
+  letter-spacing: 3px;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo {
+  height: 60px;
+}
+.principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 60px 40px;
+  gap: 40px;
 
-  }
-  .texto-principal {
-    max-width: 50%;
-  }
-  .texto-principal .destaque {
-    color: #3176a0;
-    font-weight: bold;
-  }
-  .texto-principal h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  .descricao {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 60px;
-  }
-  .botao-consulta {
-    display: inline-block;
-    background-color: #3176a0;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .imagem-principal {
-    position: relative;
-    max-width: 40%;
-  } 
-  .selo {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 8px solid #888;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-right: 400px;
-    margin-top: 100px;
-  }
-  .selo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .marcador {
-    background-color: white;
-    border-radius: 12px;
-    padding: 10px 20px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-    position: absolute;
-    left: -190px;
-    white-space: nowrap;
-  }
-  .marcador1 {
-    top: 130px;
-  }
-  .marcador2 {
-    bottom: 65px;
-  }
-  footer {
+}
+.texto-principal {
+  max-width: 50%;
+}
+.texto-principal .destaque {
+  color: #3176a0;
+  font-weight: bold;
+}
+.texto-principal h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.descricao {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 60px;
+}
+.botao-consulta {
+  display: inline-block;
+  background-color: #3176a0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.imagem-principal {
+  position: relative;
+  max-width: 40%;
+} 
+.selo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 8px solid #888;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+.selo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.marcador {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  position: absolute;
+  left: -190px;
+  white-space: nowrap;
+}
+.marcador1 {
+  top: 130px;
+}
+.marcador2 {
+  bottom: 65px;
+}
+#footerr{
     background-color: #928E8E;
     width: 100%;
+    justify-content: space-around;   
     color: #fff;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 40px; /* Espaço entre os itens */
-    font-size: 14px; /* tamanho recomendado */
-    margin-top: 229px;
-    z-index: 0;
-    position: absolute;
-    bottom: 0px;
-}
-.rodape {
-    padding: 10px;
+    font-size: 15px; /* tamanho recomendado */
+    flex-wrap: wrap;
 }

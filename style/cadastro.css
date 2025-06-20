@@ -7,98 +7,75 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
-
-
-/* Main expande para empurrar o footer para baixo */
-#css_main {
-    display: flex;
-    /*empurra o footer para baixo*/
-    padding: 20px;
-    min-height: 100vh;
-    /*Cria um tamanho fixo pro body*/
+main{
+    flex: 1;
 }
-
-#footer {
-    background-color: #928E8E;
-    color: #fff;
+#cabecalho{
     display: flex;
-    justify-content: space-between 200px;
-    /* Centraliza horizontalmente */
-    gap: 40px;
-    /* Espaço entre os itens */
-    margin-top: 61px;
-    /* tamanho recomendado */
-    font-size: 14px;
-    /* Centraliza os itens no eixo y*/
+    background-color: #3176a0;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
     align-items: center;
-    /* Deixa o espaço entre os itens igual no eixo x*/
-    justify-content: space-between;
-    /* O espaço em volta dos elementos é o mesmo, algo como uma borda invisível*/
-    justify-content: space-around;
 }
-
-header{
-    display: flex;
-    background-color: #377ba5;
-    height: 10vh; /*Só usamos vh quando falamos de altura*/
-    width: 100%; 
-    padding: 0 5px;
-    justify-content: space-between;
+.logo-navbar{
+    margin: 0px;
 }
-header a{
-    text-decoration: none;
-    color: white;
-
+.logo-navbar img{
+    width: 90px; 
+    height: 90px;
+    display: block;
 }
 #main-nav{
     display: flex;
-    flex: 1;
-    align-items: center;  
+    align-items: center;
+    flex: 1 ;
 }
 #main-nav a{
-    text-decoration: none;
     color: white;
-    padding: 10px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: gray;
-}
-.nav-links-centralizados{
-    display: flex;
-    gap: 25px;
-    margin: 0 auto;
-}
-.nav-link-login{
-    margin-left: auto;
-    /*margin-right: 1.5%;*/
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: 700;
+    padding: 10px 30px;
 }
-#main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse */
+.nav-links-centrais{
+    display: flex;
+    gap: 30px;
+    margin-left: 20vw;
 }
-
-
+.nav-login-idioma{
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+}
 .logo-navbar{
     margin: .2% 1.5%;
 }
-
-
-
+#main-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8%;
+    
+}
+#css_main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    min-height: 100vh;
+}
 #formulario {
     border: 4px solid #c1c1c1;
     padding: 20px;
     border-radius: 10px;
     background-color: #f2f2f2;
     /* Define um tamanho máximo para o container do meu formulário.*/
-    max-width: 650px;
+    max-width: 655px;
     /* Ocupa todo espaço da width, que nesse caso são 646px, nada mais que isso*/
     width: 100%;
     max-height: 626;
-    height: 622px;
+    height: 640px;
 }
 
 .metade-formulario{
@@ -116,15 +93,6 @@ header a{
     height: auto;
 }
 
-#header{ 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 70px; /* espaço lateral opcional */
-    height: 125px; 
-    width: 100vh; 
-    background-color: #377ba5; 
-}
 
 .nome-campo-cadastro{ /* Esse aqui é para quando queremos alinhar dois títulos de campos */
     display: flex;    /* Aqui, criamos uma div que engobla os códigos de todas */
@@ -153,6 +121,19 @@ header a{
 
 .campo-cadastro input::placeholder {
     color: rgba(0, 0, 0, 0.5);
+}
+.descri-senha{
+    opacity: 60%;
+    font-size: 12px;
+}
+#footerr{
+    background-color: #928E8E;
+    width: 100%;
+    justify-content: space-around;   
+    color: #fff;
+    display: flex;
+    font-size: 15px; /* tamanho recomendado */
+    flex-wrap: wrap;
 }
 .required-asterisk {
     color: red;

@@ -6,43 +6,59 @@ html, body {
     flex-direction: column;
     font-family: 'Inter', sans-serif;
 }
-
-#main_nav {
-    padding: 15px;
-    /*Cria um espaço interno entre os itens de 15pixels*/
+main{
+    flex: 1;
     display: flex;
-    /*Coloca os itens lado a lado*/
-    justify-content: space-around;
-    /*Cria um espaço de distribuição igual entre os itens do nav-bar*/
-    
-    
+    margin-top: 100px;
+    justify-content: center;
 }
-#header{
+#cabecalho{
+    display: flex;
+    background-color: #3176a0;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-navbar{
+    margin: 0px;
+}
+.logo-navbar img{
+    width: 90px; 
+    height: 90px;
+    display: block;
+}
+#main-nav{
     display: flex;
     align-items: center;
-    justify-content: flex;  
-    height: 125px; 
-    width: 100%; 
-    background-color: #377ba5; 
+    flex: 1 ;
 }
-#main_nav a {
-    color: black;
+#main-nav a{
+    color: white;
     text-decoration: none;
-    margin-left: 90px;
-    
-
+    font-weight: 700;
+    padding: 10px 30px;
 }
-
-
-.container{
-display: flex;
-margin-top: 100px;
-
-justify-content: center;
+.nav-links-centrais{
+    display: flex;
+    gap: 30px;
+    margin-left: 20vw;
 }
-
+.nav-login-idioma{
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+}
+.logo-navbar{
+    margin: .2% 1.5%;
+}
+#main-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8%;
+}
 .esquerda{
-    
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -51,7 +67,6 @@ justify-content: center;
 }
 
 .direita{
-    
     flex-direction: column;
     padding: 20px;
     text-align: center;
@@ -59,10 +74,10 @@ justify-content: center;
     background-color: rgb(217, 228, 224);
     border-radius: 10px;
     width: 300px;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
 }
 .direita select{
     font-family: Arial, Helvetica, sans-serif;
@@ -89,12 +104,12 @@ justify-content: center;
 /*fazer o footer estatico e responsivo*/
 
 
-#footer {
+#footerr{
     background-color: #928E8E;
+    width: 100%;
+    justify-content: space-around;   
     color: #fff;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-top: 70px;
-    gap: 40px; /* Espaço entre os itens */
-    font-size: 14px; /* tamanho recomendado */
+    font-size: 15px; /* tamanho recomendado */
+    flex-wrap: wrap;
 }
